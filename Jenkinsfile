@@ -7,7 +7,7 @@ node {
         sh "docker build -t welcome-to-docker-mycopy-dev-app ."
     }
 
-    stage('Post-build') {
+    stage('Postt-build') {
         echo "Build and run  Successfully!"
     }
 }
