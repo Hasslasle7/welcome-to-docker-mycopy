@@ -5,7 +5,7 @@ node {
 
     stage('Build image') {
         sh "docker build -t welcome-to-docker-mycopy:dev ."
-        sh 'curl -H "Authorization: Bearer mytoken" 192.168.1.4:8080/v1/update'
+        sh 'curl -H "Authorization: Bearer hassan7722" 192.168.1.4:8080/v1/update'
     }
 
     stage('PPost-build') {
