@@ -4,7 +4,7 @@ node {
     }
 
     stage('Build image') {
-        sh "docker build -t welcome-to-docker-mycopy-dev-app ."
+        sh "docker build -t welcome-to-docker-mycopy:dev ."
     }
 
     stage('Post-build') {
