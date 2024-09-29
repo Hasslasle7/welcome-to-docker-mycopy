@@ -4,8 +4,8 @@ node {
     }
 
     stage('Build image') {
-        sh "docker build -t welcome-to-docker-mycopy:dev ."
-        sh 'curl -H "Authorization: Bearer hassan7722" 192.168.1.4:8082/v1/update'
+        sh "docker build -t welcome-to-docker-mycopy:${INSTANCE_TAG} ."
+        sh 'curl -H "Authorization: Bearer ${TOKEN}" ${URL}'
     }
 
     stage('PPost-build') {
