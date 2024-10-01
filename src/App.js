@@ -9,9 +9,9 @@ const App = () => {
     <div className="App">
       <Confetti />
       <header className="App-header">
-        <h1 style={{ marginBottom: "0px" }}>YOUR CI/CD IS WORKING HASSAN !!</h1>
+        <h1 style={{ marginBottom: "0px" }}>YOUR CI/CD IS WORKING FINE !!</h1>
         <p style={{ marginTop: "10px", marginBottom: "50px" }}>
-          You ran your first container.
+          Fully automated.
         </p>
         <div>
           <a
