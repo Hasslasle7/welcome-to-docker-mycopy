@@ -5,7 +5,7 @@ node {
 
     stage('Build image') {
         sh "docker build -t ${INSTANCE_NAME}:${INSTANCE_TAG} ."
-        sh 'curl -H "Authorization: Bearer ${TOKEN}" ${URL}'
+        //sh 'curl -H "Authorization: Bearer ${TOKEN}" ${URL}'
     }
 
     stage('PPost-build') {
